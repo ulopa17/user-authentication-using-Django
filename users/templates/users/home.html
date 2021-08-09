@@ -1,0 +1,12 @@
+<html>
+    <h1>Project One</h1>
+
+    {% block content %}
+    <div>
+        <h2>Hello {{request.user.username}} you are logged in.</h2>
+
+        <a href="{% url 'logout' %}">Logout</a>
+    </div>
+        
+    {% endblock content %}
+</html>
